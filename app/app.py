@@ -36,7 +36,7 @@ if uploaded_file is not None:
         # Сохранение в память
         csv_out = df.to_csv(index=False).encode("utf-8")
         st.download_button(
-            label="📥 Скачать результат (CSV)",
+            label="Скачать результат (CSV)",
             data=csv_out,
             file_name="predictions.csv",
             mime="text/csv"
